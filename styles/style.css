@@ -76,7 +76,7 @@ header {
     align-items: center;
 }
 
-.nav__link {
+.nav__logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -371,6 +371,7 @@ main {
     background: var(--color-bg-subtle, rgba(248, 248, 252, 1));
 
 }
+
 
 .visual__link {
     color: var(--color-text-secondary, rgba(100, 100, 119, 1));
