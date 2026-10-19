@@ -200,7 +200,7 @@ main {
     line-height: 4.25rem;
     letter-spacing: -0.0938rem;
     width: 33.75rem;
-    height: 7.75rem;
+    height: 15.75rem;
 }
 
 .hero__highlight {
@@ -211,8 +211,6 @@ main {
     line-height: 4.25rem;
     letter-spacing: -0.0938rem;
     text-align: left;
-    width: 33.75rem;
-    height: 7.1875rem;
 }
 
 .hero__description {
