@@ -183,13 +183,13 @@ main {
     gap: 1.125rem;
 }
 
-.hero__eyebrow {
+.eyebrow {
     color: var(--color-brand-text, rgba(108, 92, 231, 1));
     font-size: .8125rem;
     font-weight: 600;
     line-height: 1.125rem;
     letter-spacing: .0125rem;
-    text-align: left;
+
 }
 
 .hero__title {
@@ -289,7 +289,7 @@ main {
 }
 
 .visual__dashboard {
-    
+
     width: 38.125rem;
     height: 26.875rem;
     display: flex;
@@ -464,4 +464,85 @@ main {
     border: .0625rem solid var(--color-border-default, rgba(231, 231, 239, 1));
     border-radius: .625rem;
     background: var(--color-bg-page, rgba(255, 255, 255, 1));
+}
+
+.features {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 5rem 3.5rem;
+
+
+}
+
+.title {
+    color: var(--color-text-primary, rgba(21, 21, 38, 1));
+    font-style: Bold;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.05rem;
+    height: 3.0625rem;
+}
+
+.intro {
+    color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+
+}
+
+.features__cards {
+    width: 83rem;
+    height: 13.75rem;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--color-bg-page, rgba(255, 255, 255, 1));
+    ;
+
+}
+
+.features__icon {
+    width: 2.875rem;
+    height: 2.875rem;
+    padding: .8125rem .5625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-md, .75rem);
+    background: var(--color-brand-soft, rgba(238, 234, 254, 1));
+}
+
+.features__text {
+    color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.features__card {
+    /* Card / Feature */
+    width: 20rem;
+    height: 13.75rem;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .875rem;
+    padding: 1.25rem 1.25rem;
+    border-radius: var(--radius-lg, 1.25rem);
+    /* Flowly / Shadow Small */
+    box-shadow: 0px .375rem 1.125rem 0rem rgba(20, 18, 41, 0.08);
+    background: var(--color-bg-page, rgba(255, 255, 255, 1));
+
+
 }
