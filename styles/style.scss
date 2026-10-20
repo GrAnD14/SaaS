@@ -159,10 +159,10 @@ main {
   align-items: center;
 }
 
-@mixin sectionProperties($direction, $gap, $padding) {
+@mixin sectionProperties($direction, $gap, $padding, $align: center) {
   display: flex; //статическое свойство
   justify-content: flex-start;
-
+  align-items: $align;
   flex-direction: $direction;
   gap: $gap;
   padding: $padding;
@@ -451,11 +451,7 @@ main {
 }
 
 .features {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.75rem;
-  padding: 5rem 3.5rem;
+  @include sectionProperties(column, 1.75rem, 5rem 3.5rem)
 }
 
 .title {
@@ -521,12 +517,7 @@ main {
 }
 
 .how-it-works {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.625rem;
-  padding: 5rem 6rem;
+  @include sectionProperties(column, 1.625rem, 5rem 6rem);
   background: var(--color-bg-subtle, rgba(248, 248, 252, 1));
 }
 
