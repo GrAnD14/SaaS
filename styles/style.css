@@ -213,7 +213,7 @@ main {
     text-align: left;
 }
 
-.hero__description {
+.description {
     color: var(--color-text-secondary, rgba(100, 100, 119, 1));
     font-style: Regular;
     font-size: 1rem;
@@ -483,16 +483,11 @@ main {
     font-weight: 700;
     line-height: 3rem;
     letter-spacing: -0.05rem;
-    height: 3.0625rem;
 }
 
 .intro {
-    color: var(--color-text-secondary, rgba(100, 100, 119, 1));
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 0rem;
-
+    width: 83rem;
+    text-align: center;
 }
 
 .features__cards {
@@ -612,4 +607,79 @@ main {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
+}
+
+.app-preview {
+    padding: 5.5rem 6rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+}
+
+.app-preview__app-screenshot {
+    width: 40.625rem;
+    height: 30rem;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app-preview__copy {
+    width: 33.375rem;
+    height: 29.125rem;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.app-preview__title {
+    height: 5.4375rem;
+}
+
+
+.stats {
+    padding: 1.75rem 6rem;
+    background: var(--color-brand-soft, rgba(238, 234, 254, 1));
+    justify-content: center;
+    align-items: center;
+}
+
+.stats__cards {
+    gap: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.stats__card {
+    width: 18.5625rem;
+    height: 4.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .25rem;
+    padding: .75rem 1rem;
+}
+
+.stats__value {
+    color: var(--color-text-primary, rgba(21, 21, 38, 1));
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: -0.0125rem;
+}
+
+.stats__label {
+    color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
 }
