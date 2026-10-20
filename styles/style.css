@@ -59,8 +59,9 @@ select {
     font: inherit;
 }
 
-body {
+body, html {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 
