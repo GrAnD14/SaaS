@@ -1,4 +1,10 @@
-@charset "UTF-8";
+/* media */
+@mixin media($breakpoint) {
+  @media screen  and ($breakpoint) {
+    @content
+  }
+}
+
 
 /* 1. Включаем правильную модель расчета размеров (border-box) для всех элементов */
 *,
@@ -65,6 +71,10 @@ body,
 html {
   font-family: sans-serif;
   overflow-x: hidden;
+}
+
+html {
+  font-size: 1rem;
 }
 
 header {
@@ -170,6 +180,10 @@ main {
   flex-direction: row;
   gap: 3.5rem;
   padding: 4.5rem 6rem;
+
+  @include media("max-width: 1024px") {
+    flex-wrap: wrap;
+  }
 }
 
 .hero__copy {
@@ -791,7 +805,6 @@ main {
   letter-spacing: 0rem;
   text-align: left;
   width: 16.625rem;
-
   max-width: 100%;
   min-width: 0;
 }
@@ -1096,5 +1109,9 @@ footer {
   letter-spacing: 0rem;
   text-align: left;
 }
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
