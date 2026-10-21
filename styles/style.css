@@ -805,8 +805,7 @@ main {
 }
 
 .cta {
-  /* CTA */
-  width: 78rem;
+  width: 100%;
   height: 28.1875rem;
   display: flex;
   flex-direction: column;
@@ -829,4 +828,48 @@ main {
 .cta-wrapper__description {
   color: var(--color-on-brand, rgb(255, 255, 255));
   text-align: center;
+}
+
+.faq {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.1875rem;
+  padding: 4.5rem 6rem;
+}
+
+.faq__items {
+  /* FAQ / Item */
+  width: 40rem;
+  height: 3.75rem;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.125rem 1.25rem;
+  border-radius: var(--radius-md, 0.75rem);
+  background: var(--color-bg-subtle, rgb(248, 248, 252));
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--color-text-primary, rgb(21, 21, 38));
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.faq__plus {
+  color: var(--color-brand-text, rgb(108, 92, 231));
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: -0.0125rem;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
