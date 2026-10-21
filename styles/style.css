@@ -43,6 +43,7 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+  min-width: 0;
 }
 
 /* 6. Убираем стандартное подчеркивание у ссылок */
@@ -86,6 +87,8 @@ header {
 .nav__icon {
   width: 1.25rem;
   height: 1.75rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .text-logo {
@@ -103,8 +106,10 @@ header {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.75rem;
+  min-width: 0;
   width: 19.625rem;
   height: 1.25rem;
+  max-width: 100%;
 }
 
 .nav__link {
@@ -116,8 +121,6 @@ header {
 }
 
 .buttons-group {
-  width: 15.75rem;
-  height: 6.25rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -188,6 +191,8 @@ main {
   font-weight: 700;
   line-height: 4.25rem;
   letter-spacing: -0.0938rem;
+  max-width: 100%;
+  min-width: 0;
   width: 33.75rem;
   height: 15.75rem;
 }
@@ -209,6 +214,8 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
+  max-width: 100%;
+  min-width: 0;
   width: 33.75rem;
   height: 3rem;
 }
@@ -219,6 +226,8 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.75rem;
+  max-width: 100%;
+  min-width: 0;
   width: 20.6875rem;
   height: 6.25rem;
 }
@@ -253,6 +262,8 @@ main {
 }
 
 .hero__trust-note {
+  max-width: 100%;
+  min-width: 0;
   width: 33.75rem;
   height: 1.5rem;
   color: var(--color-text-secondary, rgb(100, 100, 119));
@@ -264,8 +275,9 @@ main {
 }
 
 .visual {
+  max-width: 100%;
+  min-width: 0;
   width: 40.75rem;
-  height: 26.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -275,6 +287,8 @@ main {
 }
 
 .visual__dashboard {
+  max-width: 100%;
+  min-width: 0;
   width: 38.125rem;
   height: 26.875rem;
   display: flex;
@@ -288,6 +302,8 @@ main {
 }
 
 .visual__body {
+  max-width: 100%;
+  min-width: 0;
   width: 38.125rem;
   height: 22.875rem;
   display: flex;
@@ -297,6 +313,8 @@ main {
 }
 
 .visual__topbar {
+  max-width: 100%;
+  min-width: 0;
   width: 38.125rem;
   height: 4rem;
   display: flex;
@@ -309,6 +327,8 @@ main {
 }
 
 .visual__text-logo {
+  max-width: 100%;
+  min-width: 0;
   color: var(--color-text-primary, rgb(21, 21, 38));
   font-size: 1rem;
   font-weight: 600;
@@ -318,6 +338,8 @@ main {
 }
 
 .visual__search {
+  max-width: 100%;
+  min-width: 0;
   width: 23.75rem;
   height: 2.25rem;
   display: flex;
@@ -336,10 +358,10 @@ main {
 }
 
 .visual__sidebar {
-  /* Sidebar */
+  max-width: 100%;
+  min-width: 0;
   width: 8.3875rem;
   height: 22.875rem;
-  /* Автолейаут */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -364,6 +386,8 @@ main {
 }
 
 .visual__board {
+  max-width: 100%;
+  min-width: 0;
   width: 29.7375rem;
   height: 22.875rem;
   /* Автолейаут */
@@ -377,6 +401,8 @@ main {
 }
 
 .visual__title {
+  max-width: 100%;
+  min-width: 0;
   display: inline-block;
   color: var(--color-text-primary, rgb(21, 21, 38));
   font-size: 1.375rem;
@@ -387,6 +413,8 @@ main {
 }
 
 .visual__container {
+  max-width: 100%;
+  min-width: 0;
   width: 27.2375rem;
   height: 17.625rem;
   /* Автолейаут */
@@ -398,6 +426,8 @@ main {
 }
 
 .visual__columns {
+  max-width: 100%;
+  min-width: 0;
   width: 8.5794rem;
   height: 17.625rem;
   display: flex;
@@ -426,7 +456,8 @@ main {
 }
 
 .visual__item {
-  /* Task card */
+  max-width: 100%;
+  min-width: 0;
   width: 7.0794rem;
   height: 3.875rem;
   /* Автолейаут */
@@ -460,11 +491,15 @@ main {
 }
 
 .intro {
+  max-width: 100%;
+  min-width: 0;
   width: 83rem;
   text-align: center;
 }
 
 .features__cards {
+  max-width: 100%;
+  min-width: 0;
   width: 83rem;
   height: 13.75rem;
   /* Автолейаут */
@@ -477,6 +512,8 @@ main {
 }
 
 .features__icon {
+  max-width: 100%;
+  min-width: 0;
   width: 2.875rem;
   height: 2.875rem;
   padding: 0.8125rem 0.5625rem;
@@ -496,7 +533,8 @@ main {
 }
 
 .features__card {
-  /* Card / Feature */
+  max-width: 100%;
+  min-width: 0;
   width: 20rem;
   height: 13.75rem;
   /* Автолейаут */
@@ -532,6 +570,8 @@ main {
   align-items: flex-start;
   gap: 1.5rem;
   background: rgb(255, 255, 255);
+  max-width: 100%;
+  min-width: 0;
 }
 
 .how-it-works__step {
@@ -560,6 +600,8 @@ main {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .how-it-works__title {
@@ -594,6 +636,8 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .app-preview__copy {
@@ -605,6 +649,8 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .app-preview__title {
@@ -638,6 +684,8 @@ main {
   align-items: center;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .stats__value {
@@ -685,6 +733,8 @@ main {
   border: 1px solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 20px);
   background: var(--color-bg-page, rgb(255, 255, 255));
+  max-width: 100%;
+  min-width: 0;
 }
 
 .pricing__plan {
@@ -714,6 +764,8 @@ main {
   letter-spacing: 0rem;
   text-align: left;
   width: 16.625rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .pricing__benefit {
@@ -743,6 +795,8 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .testimonials_card {
@@ -758,6 +812,8 @@ main {
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
   height: 10.875rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .testimonials__quote {
@@ -807,6 +863,8 @@ main {
   padding: 2.75rem 2.75rem 3.6875rem 2.75rem;
   border-radius: 1.75rem;
   background: var(--color-brand, rgb(108, 92, 231));
+  max-width: 100%;
+  min-width: 0;
 }
 
 .cta-wrapper__eyebrow {
@@ -832,7 +890,6 @@ main {
 }
 
 .faq__items {
-  /* FAQ / Item */
   width: 40rem;
   height: 3.75rem;
   /* Автолейаут */
@@ -842,6 +899,8 @@ main {
   padding: 1.125rem 1.25rem;
   border-radius: var(--radius-md, 0.75rem);
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+  max-width: 100%;
+  min-width: 0;
 }
 
 .faq__item {
@@ -855,6 +914,8 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0px;
   text-align: left;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .faq__plus {
@@ -885,6 +946,8 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .articles__card {
@@ -901,6 +964,8 @@ main {
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
+  max-width: 100%;
+  min-width: 0;
 }
 
 .articles__link {
@@ -910,6 +975,8 @@ main {
 .articles__thumbnail {
   width: 22.5rem;
   height: 9.375rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .articles__meta {
@@ -947,6 +1014,8 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.75rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .footer__summary {
@@ -966,6 +1035,8 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.625rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .footer__heading {
@@ -984,4 +1055,6 @@ footer {
   line-height: 1.25rem;
   letter-spacing: 0rem;
   text-align: left;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
