@@ -510,7 +510,7 @@ main {
   letter-spacing: -0.05rem;
 }
 
-.intro {
+.features__intro {
   max-width: 100%;
   min-width: 0;
   width: 83rem;
@@ -806,6 +806,7 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
+
 }
 
 .testimonials {
@@ -815,6 +816,7 @@ main {
   flex-direction: column;
   gap: 3.125rem;
   padding: 4.5rem 6rem;
+  background: var(--color-bg-subtle, rgba(248, 248, 252, 1));
 }
 
 .testimonials__cards {
@@ -831,7 +833,7 @@ main {
   min-width: 0;
 }
 
-.testimonials_card {
+.testimonials__card {
   width: 25rem;
   display: flex;
   flex-direction: column;
