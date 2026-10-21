@@ -114,7 +114,6 @@ header {
 
 .nav__link {
   color: var(--color-text-secondary, rgb(100, 100, 119));
-  font-style: Regular;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -208,7 +207,6 @@ main {
 
 .description {
   color: var(--color-text-secondary, rgb(100, 100, 119));
-  font-style: Regular;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -757,7 +755,6 @@ main {
 
 .pricing__description {
   color: var(--color-text-secondary, rgb(100, 100, 119));
-  font-style: Regular;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
