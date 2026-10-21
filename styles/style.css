@@ -48,8 +48,6 @@ svg {
 /* 6. Убираем стандартное подчеркивание у ссылок */
 a {
   text-decoration: none;
-  color: inherit;
-  /* Ссылка наследует цвет текста родителя */
 }
 
 /* 7. Наследуем шрифты для полей ввода и кнопок */
@@ -92,7 +90,6 @@ header {
 
 .text-logo {
   color: var(--color-text-primary, rgb(21, 21, 38));
-  font-style: Semi Bold;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.75rem;
@@ -187,7 +184,6 @@ main {
 
 .hero__title {
   color: var(--color-text-primary, rgb(21, 21, 38));
-  font-style: Bold;
   font-size: 4rem;
   font-weight: 700;
   line-height: 4.25rem;
@@ -198,7 +194,6 @@ main {
 
 .hero__highlight {
   color: var(--color-brand-text, rgb(108, 92, 231));
-  font-style: Bold;
   font-size: 4rem;
   font-weight: 700;
   line-height: 4.25rem;
@@ -458,7 +453,6 @@ main {
 
 .title {
   color: var(--color-text-primary, rgb(21, 21, 38));
-  font-style: Bold;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
@@ -695,7 +689,6 @@ main {
 
 .pricing__plan {
   color: var(--color-text-primary, rgb(21, 21, 38));
-  font-style: Semi Bold;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
@@ -705,7 +698,6 @@ main {
 
 .pricing__price {
   color: var(--color-text-primary, rgb(21, 21, 38));
-  font-style: Bold;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
