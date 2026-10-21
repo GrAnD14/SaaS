@@ -839,6 +839,7 @@ main {
 
 .articles {
   @include sectionProperties(column, 3.1875rem, 4.5rem 6rem);
+  background: var(--color-bg-subtle, rgba(248, 248, 252, 1));
 }
 
 .articles__cards {
@@ -870,7 +871,7 @@ main {
 }
 
 .articles__link {
-    display: inline-block;
+  display: inline-block;
 }
 
 .articles__thumbnail {
@@ -894,5 +895,61 @@ main {
   font-weight: 600;
   line-height: 1.75rem;
   letter-spacing: -0.0125rem;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 6rem;
+}
+
+.footer__brand {
+  width: 24.25rem;
+  height: 4rem;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer__summary {
+  color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+.footer__items {
+  width: 4.9375rem;
+  height: 7.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.footer__heading {
+  color: var(--color-text-primary, rgba(21, 21, 38, 1));
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer__link {
+  color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
   text-align: left;
 }
