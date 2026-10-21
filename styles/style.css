@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* 1. Включаем правильную модель расчета размеров (border-box) для всех элементов */
 *,
 *::before,
@@ -584,11 +585,12 @@ main {
 }
 
 .app-preview {
-  padding: 5.5rem 6rem;
-  flex-direction: row;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   gap: 4rem;
+  padding: 5.5rem 6rem;
 }
 
 .app-preview__app-screenshot {
@@ -617,10 +619,14 @@ main {
 }
 
 .stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
   padding: 1.75rem 6rem;
   background: var(--color-brand-soft, rgb(238, 234, 254));
   justify-content: center;
-  align-items: center;
 }
 
 .stats__cards {
@@ -654,4 +660,81 @@ main {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding: 5.5rem 6rem;
+}
+
+.pricing__cards {
+  width: 78rem;
+  height: 26.875rem;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.pricing__card {
+  width: 20.625rem;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: .875rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: .0625rem solid var(--color-border-default, rgba(231, 231, 239, 1));
+  border-radius: var(--radius-lg, 1.25rem);
+  background: var(--color-bg-page, rgba(255, 255, 255, 1));
+}
+
+.pricing__plan {
+  color: var(--color-text-primary, rgb(21, 21, 38));
+  font-style: Semi Bold;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+.pricing__price {
+  color: var(--color-text-primary, rgb(21, 21, 38));
+  font-style: Bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  text-align: left;
+}
+
+.pricing__description {
+  color: var(--color-text-secondary, rgb(100, 100, 119));
+  font-style: Regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  width: 16.625rem;
+}
+
+.pricing__benefit {
+  color: var(--color-text-primary, rgb(21, 21, 38));
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
