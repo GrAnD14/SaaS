@@ -793,4 +793,40 @@ main {
   line-height: 1.25rem;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+  padding: 4rem 6rem;
+}
+
+.cta {
+  /* CTA */
+  width: 78rem;
+  height: 28.1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.1875rem;
+  padding: 2.75rem 2.75rem 3.6875rem 2.75rem;
+  border-radius: 1.75rem;
+  background: var(--color-brand, rgb(108, 92, 231));
+}
+
+.cta-wrapper__eyebrow {
+  color: var(--color-on-brand, rgb(255, 255, 255));
+}
+
+.cta-wrapper__title {
+  color: var(--color-on-brand, rgb(255, 255, 255));
+}
+
+.cta-wrapper__description {
+  color: var(--color-on-brand, rgb(255, 255, 255));
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -761,10 +761,40 @@ main {
 
 .testimonials__role {
   color: var(--color-text-secondary, rgba(100, 100, 119, 1));
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0px;
   text-align: left;
+}
 
+.cta-wrapper {
+  @include sectionProperties(column, 0, 4rem 6rem, flex-start);
+}
+
+.cta {
+  /* CTA */
+  width: 78rem;
+  height: 28.1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.1875rem;
+  padding: 2.75rem 2.75rem 3.6875rem 2.75rem;
+  border-radius: 1.75rem;
+  background: var(--color-brand, rgba(108, 92, 231, 1));
+}
+
+.cta-wrapper__eyebrow {
+  color: var(--color-on-brand, rgba(255, 255, 255, 1));
+}
+
+.cta-wrapper__title {
+  color: var(--color-on-brand, rgba(255, 255, 255, 1));
+}
+
+.cta-wrapper__description {
+  color: var(--color-on-brand, rgba(255, 255, 255, 1));
+  text-align: center;
 }
