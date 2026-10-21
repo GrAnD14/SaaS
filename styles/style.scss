@@ -710,3 +710,61 @@ main {
   letter-spacing: 0rem;
   text-align: left;
 }
+
+.testimonials {
+  @include sectionProperties(column, 3.125rem, 4.5rem 6rem);
+}
+
+.testimonials__cards {
+  /* Testimonial cards */
+  width: 78rem;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.testimonials_card {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 0.0625rem solid var(--color-border-default, rgba(231, 231, 239, 1));
+  border-radius: var(--radius-lg, 1.25rem);
+  background: var(--color-bg-page, rgba(255, 255, 255, 1));
+  height: 10.875rem;
+}
+
+.testimonials__quote {
+  color: var(--color-text-primary, rgba(21, 21, 38, 1));
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.testimonials__name {
+  color: var(--color-text-primary, rgba(21, 21, 38, 1));
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.testimonials__role {
+  color: var(--color-text-secondary, rgba(100, 100, 119, 1));
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
