@@ -1,10 +1,9 @@
 /* media */
 @mixin media($breakpoint) {
-  @media screen  and ($breakpoint) {
-    @content
+  @media screen and ($breakpoint) {
+    @content;
   }
 }
-
 
 /* 1. Включаем правильную модель расчета размеров (border-box) для всех элементов */
 *,
@@ -48,7 +47,7 @@ ol {
 img,
 picture,
 svg {
-  max-width: 100%;
+  width: 100%;
   display: block;
 
   min-width: 0;
@@ -97,11 +96,11 @@ header {
 }
 
 .nav__icon {
-  width: 1.25rem;
-  height: 1.75rem;
-
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
+  max-width: 1.25rem;
+  min-height: 1.75rem;
+  flex-shrink: 0;
 }
 
 .text-logo {
@@ -120,10 +119,10 @@ header {
   align-items: flex-start;
   gap: 1.75rem;
   min-width: 0;
-  width: 19.625rem;
-  height: 1.25rem;
+  width: 100%;
+  max-width: 19.625rem;
+  min-height: 1.25rem;
 
-  max-width: 100%;
 }
 
 .nav__link {
@@ -148,7 +147,7 @@ header {
   align-items: center;
   padding: 0.875rem 1.5rem;
   border-radius: var(--radius-md, 0.75rem);
-  height: 6.25rem;
+  min-height: 6.25rem;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -208,11 +207,10 @@ main {
   font-weight: 700;
   line-height: 4.25rem;
   letter-spacing: -0.0938rem;
-  max-width: 100%;
+  max-width: 33.75rem;
   min-width: 0;
-  width: 33.75rem;
-  height: 15.75rem;
-
+  width: 100%;
+  min-height: 15.75rem;
 }
 
 .hero__highlight {
@@ -231,11 +229,10 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
-  max-width: 100%;
+  max-width: 33.75rem;
   min-width: 0;
-  width: 33.75rem;
-  height: 3rem;
-
+  width: 100%;
+  min-height: 3rem;
 }
 
 .hero__buttons-group {
@@ -244,11 +241,10 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.75rem;
-  max-width: 100%;
+  max-width: 20.6875rem;
   min-width: 0;
-  width: 20.6875rem;
-  height: 6.25rem;
-
+  width: 100%;
+  min-height: 6.25rem;
 }
 
 .btn--primary.hero__btn {
@@ -281,37 +277,35 @@ main {
 }
 
 .hero__trust-note {
-  max-width: 100%;
+  max-width: 33.75rem;
   min-width: 0;
-  width: 33.75rem;
-  height: 1.5rem;
+  width: 100%;
+  min-height: 1.5rem;
   color: var(--color-text-secondary, rgb(100, 100, 119));
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0rem;
   text-align: left;
-
 }
 
 .visual {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 40.75rem;
+  max-width: 40.75rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   background: rgb(255, 255, 255);
   padding: 0 2.625rem 0 0;
-
 }
 
 .visual__dashboard {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 38.125rem;
-  height: 26.875rem;
+  max-width: 38.125rem;
+  min-height: 26.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -320,26 +314,24 @@ main {
   /* Flowly / Shadow Large */
   box-shadow: 0px 1.125rem 2.5rem -0.5rem rgba(20, 18, 41, 0.12);
   background: var(--color-bg-page, rgb(255, 255, 255));
-
 }
 
 .visual__body {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 38.125rem;
-  height: 22.875rem;
+  max-width: 38.125rem;
+  min-height: 22.875rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-
 }
 
 .visual__topbar {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 38.125rem;
-  height: 4rem;
+  max-width: 38.125rem;
+  min-height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -347,11 +339,10 @@ main {
   gap: 0.75rem;
   padding: 0.875rem 1.125rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
-
 }
 
 .visual__text-logo {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
   color: var(--color-text-primary, rgb(21, 21, 38));
   font-size: 1rem;
@@ -359,14 +350,13 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
-
 }
 
 .visual__search {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 23.75rem;
-  height: 2.25rem;
+  max-width: 23.75rem;
+  min-height: 2.25rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -380,14 +370,13 @@ main {
   line-height: 1.25rem;
   letter-spacing: 0px;
   text-align: left;
-
 }
 
 .visual__sidebar {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 8.3875rem;
-  height: 22.875rem;
+  max-width: 8.3875rem;
+  min-height: 22.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -395,7 +384,6 @@ main {
   gap: 0.875rem;
   padding: 1.25rem 0.875rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
-
 }
 
 .visual__link {
@@ -413,10 +401,10 @@ main {
 }
 
 .visual__board {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 29.7375rem;
-  height: 22.875rem;
+  max-width: 29.7375rem;
+  min-height: 22.875rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -425,11 +413,10 @@ main {
   gap: 1rem;
   padding: 1.25rem;
   background: rgb(255, 255, 255);
-
 }
 
 .visual__title {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
   display: inline-block;
   color: var(--color-text-primary, rgb(21, 21, 38));
@@ -438,28 +425,26 @@ main {
   line-height: 1.75rem;
   letter-spacing: -0.0125rem;
   text-align: left;
-
 }
 
 .visual__container {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 27.2375rem;
-  height: 17.625rem;
+  max-width: 27.2375rem;
+  min-height: 17.625rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.75rem;
-
 }
 
 .visual__columns {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 8.5794rem;
-  height: 17.625rem;
+  max-width: 8.5794rem;
+  min-height: 17.625rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -468,7 +453,6 @@ main {
   padding: 0.75rem;
   border-radius: 0.75rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
-
 }
 
 .visual__subtitle {
@@ -484,13 +468,17 @@ main {
   display: flex;
   gap: 0.625rem;
   flex-direction: column;
+  min-width: 0;
+  width: 100%;
+
 }
 
 .visual__item {
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
-  width: 7.0794rem;
-  height: 3.875rem;
+  
+  max-width: 7.0794rem;
+  min-height: 3.875rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -502,7 +490,7 @@ main {
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: 0.625rem;
   background: var(--color-bg-page, rgb(255, 255, 255));
-
+  word-break: break-word;
 }
 
 .features {
@@ -523,18 +511,17 @@ main {
 }
 
 .features__intro {
-  max-width: 100%;
   min-width: 0;
-  width: 83rem;
+  width: 100%;
+  max-width: 83rem;
   text-align: center;
-
 }
 
 .features__cards {
-  max-width: 100%;
   min-width: 0;
-  width: 83rem;
-  height: 13.75rem;
+  width: 100%;
+  max-width: 83rem;
+  min-height: 13.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -542,14 +529,13 @@ main {
   align-items: flex-start;
   gap: 1rem;
   background: var(--color-bg-page, rgb(255, 255, 255));
-
 }
 
 .features__icon {
-  max-width: 100%;
   min-width: 0;
-  width: 2.875rem;
-  height: 2.875rem;
+  width: 100%;
+  max-width: 2.875rem;
+  min-height: 2.875rem;
   padding: 0.8125rem 0.5625rem;
   display: flex;
   flex-direction: row;
@@ -557,7 +543,6 @@ main {
   align-items: center;
   border-radius: var(--radius-md, 0.75rem);
   background: var(--color-brand-soft, rgb(238, 234, 254));
-
 }
 
 .features__text {
@@ -568,10 +553,10 @@ main {
 }
 
 .features__card {
-  max-width: 100%;
   min-width: 0;
-  width: 20rem;
-  height: 13.75rem;
+  width: 100%;
+  max-width: 20rem;
+  max-height: 13.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -583,7 +568,6 @@ main {
   /* Flowly / Shadow Small */
   box-shadow: 0px 0.375rem 1.125rem 0rem rgba(20, 18, 41, 0.08);
   background: var(--color-bg-page, rgb(255, 255, 255));
-
 }
 
 .how-it-works {
@@ -597,8 +581,10 @@ main {
 }
 
 .how-it-works__steps {
-  width: 78rem;
-  height: 11.25rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 78rem;
+  min-height: 11.25rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -607,8 +593,6 @@ main {
   gap: 1.5rem;
   background: rgb(255, 255, 255);
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .how-it-works__step {
@@ -623,8 +607,10 @@ main {
 }
 
 .how-it-works__num {
-  width: 2rem;
-  height: 2.5rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 2rem;
+  min-height: 2.5rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -638,8 +624,6 @@ main {
   font-weight: 600;
   line-height: 1.5rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .how-it-works__title {
@@ -667,21 +651,23 @@ main {
 }
 
 .app-preview__app-screenshot {
-  width: 40.625rem;
-  height: 30rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 40.625rem;
+  min-height: 30rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .app-preview__copy {
-  width: 33.375rem;
-  height: 29.125rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 33.375rem;
+  min-height: 29.125rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -689,12 +675,10 @@ main {
   align-items: flex-start;
   gap: 2rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .app-preview__title {
-  height: 5.4375rem;
+  min-height: 5.4375rem;
 }
 
 .stats {
@@ -710,14 +694,17 @@ main {
 
 .stats__cards {
   gap: 1.25rem;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .stats__card {
-  width: 18.5625rem;
-  height: 4.75rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 18.5625rem;
+  min-height: 4.75rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -725,8 +712,6 @@ main {
   gap: 0.25rem;
   padding: 0.75rem 1rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .stats__value {
@@ -762,8 +747,10 @@ main {
 }
 
 .pricing__card {
-  width: 20.625rem;
-  height: 26.875rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 20.625rem;
+  min-height: 26.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -775,8 +762,6 @@ main {
   border-radius: var(--radius-lg, 20px);
   background: var(--color-bg-page, rgb(255, 255, 255));
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .pricing__plan {
@@ -804,9 +789,9 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
-  width: 16.625rem;
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
+  max-width: 16.625rem;
 }
 
 .pricing__benefit {
@@ -816,7 +801,6 @@ main {
   line-height: 1.5rem;
   letter-spacing: 0rem;
   text-align: left;
-
 }
 
 .testimonials {
@@ -831,7 +815,9 @@ main {
 
 .testimonials__cards {
   /* Testimonial cards */
-  width: 78rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 78rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -839,12 +825,12 @@ main {
   align-items: flex-start;
   gap: 1.5rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .testimonials__card {
-  width: 25rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -855,10 +841,8 @@ main {
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
-  height: 10.875rem;
+  min-height: 10.875rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .testimonials__quote {
@@ -899,7 +883,7 @@ main {
 
 .cta {
   width: 100%;
-  height: 28.1875rem;
+  min-height: 28.1875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -909,7 +893,6 @@ main {
   border-radius: 1.75rem;
   background: var(--color-brand, rgb(108, 92, 231));
 
-  max-width: 100%;
   min-width: 0;
 }
 
@@ -919,6 +902,7 @@ main {
 
 .cta-wrapper__title {
   color: var(--color-on-brand, rgb(255, 255, 255));
+  text-align: center;
 }
 
 .cta-wrapper__description {
@@ -936,8 +920,10 @@ main {
 }
 
 .faq__items {
-  width: 40rem;
-  height: 3.75rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 40rem;
+  min-height: 3.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -946,8 +932,6 @@ main {
   border-radius: var(--radius-md, 0.75rem);
   background: var(--color-bg-subtle, rgb(248, 248, 252));
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .faq__item {
@@ -962,7 +946,6 @@ main {
   letter-spacing: 0px;
   text-align: left;
 
-  max-width: 100%;
   min-width: 0;
 }
 
@@ -986,8 +969,10 @@ main {
 }
 
 .articles__cards {
-  width: 78rem;
-  height: 16.75rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 78rem;
+  min-height: 16.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -995,13 +980,13 @@ main {
   align-items: flex-start;
   gap: 1.5rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .articles__card {
   /* Card / Article */
-  width: 25rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 25rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -1014,8 +999,6 @@ main {
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .articles__link {
@@ -1023,11 +1006,11 @@ main {
 }
 
 .articles__thumbnail {
-  width: 22.5rem;
-  height: 9.375rem;
-
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
+  max-width: 22.5rem;
+  min-height: 9.375rem;
+
 }
 
 .articles__meta {
@@ -1057,8 +1040,10 @@ footer {
 }
 
 .footer__brand {
-  width: 24.25rem;
-  height: 4rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 24.25rem;
+  min-height: 4rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -1066,8 +1051,6 @@ footer {
   align-items: flex-start;
   gap: 0.75rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .footer__summary {
@@ -1080,16 +1063,16 @@ footer {
 }
 
 .footer__items {
-  width: 4.9375rem;
-  height: 7.125rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 4.9375rem;
+  min-height: 7.125rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.625rem;
 
-  max-width: 100%;
-  min-width: 0;
 }
 
 .footer__heading {
@@ -1109,9 +1092,5 @@ footer {
   letter-spacing: 0rem;
   text-align: left;
 }
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
