@@ -73,6 +73,11 @@ html {
 header {
   padding: 1.25rem 6rem;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 1.25rem 1rem;
+  }
+}
 
 .nav {
   display: flex;
@@ -176,6 +181,7 @@ main {
 @media screen and (max-width: 1024px) {
   .hero {
     flex-wrap: wrap;
+    padding: 4.5rem 2rem;
   }
 }
 
@@ -185,6 +191,11 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.125rem;
+}
+@media screen and (max-width: 1024px) {
+  .hero__copy {
+    width: 100%;
+  }
 }
 
 .eyebrow {
@@ -548,7 +559,7 @@ main {
   min-width: 0;
   width: 100%;
   max-width: 20rem;
-  max-height: 13.75rem;
+  min-height: 18.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -570,6 +581,11 @@ main {
   gap: 1.625rem;
   padding: 5rem 6rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+}
+@media screen and (max-width: 1024px) {
+  .how-it-works {
+    padding: 4.5rem 2rem;
+  }
 }
 
 .how-it-works__steps {
@@ -639,6 +655,12 @@ main {
   gap: 4rem;
   padding: 5.5rem 6rem;
 }
+@media screen and (max-width: 1024px) {
+  .app-preview {
+    flex-direction: column-reverse;
+    padding: 4.5rem 2rem;
+  }
+}
 
 .app-preview__app-screenshot {
   width: 100%;
@@ -655,7 +677,7 @@ main {
 .app-preview__copy {
   width: 100%;
   min-width: 0;
-  max-width: 33.375rem;
+  max-width: 100%;
   min-height: 29.125rem;
   /* Автолейаут */
   display: flex;
@@ -665,19 +687,36 @@ main {
   gap: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .app-preview__copy > p {
+    margin: auto;
+  }
+}
+
 .app-preview__title {
   min-height: 5.4375rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .eyebrow,
+  .title {
+    margin: auto;
+  }
+}
+
 .stats {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   gap: 0;
   padding: 1.75rem 6rem;
   background: var(--color-brand-soft, rgb(238, 234, 254));
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .stats {
+    padding: 1.75rem 2rem;
+  }
 }
 
 .stats__cards {
@@ -724,6 +763,11 @@ main {
   gap: 3.125rem;
   padding: 5.5rem 6rem;
 }
+@media screen and (max-width: 1024px) {
+  .pricing {
+    padding: 5.5rem 2rem;
+  }
+}
 
 .pricing__cards {
   display: flex;
@@ -737,7 +781,7 @@ main {
   width: 100%;
   min-width: 0;
   max-width: 20.625rem;
-  min-height: 26.875rem;
+  min-height: 24.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -748,6 +792,12 @@ main {
   border: 1px solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 20px);
   background: var(--color-bg-page, rgb(255, 255, 255));
+}
+@media screen and (max-width: 1024px) {
+  .pricing__card {
+    padding: 2.5rem;
+    max-height: 37rem;
+  }
 }
 
 .pricing__plan {
@@ -798,6 +848,11 @@ main {
   padding: 4.5rem 6rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
 }
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    padding: 5.5rem 2rem;
+  }
+}
 
 .testimonials__cards {
   /* Testimonial cards */
@@ -821,12 +876,17 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 2.5rem;
   box-sizing: border-box;
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
   min-height: 10.875rem;
+}
+@media screen and (max-width: 1024px) {
+  .testimonials__card {
+    padding: 1.5rem;
+  }
 }
 
 .testimonials__quote {
@@ -864,6 +924,11 @@ main {
   gap: 0;
   padding: 4rem 6rem;
 }
+@media screen and (max-width: 1024px) {
+  .cta-wrapper {
+    padding: 5.5rem 2rem;
+  }
+}
 
 .cta {
   width: 100%;
@@ -900,6 +965,11 @@ main {
   flex-direction: column;
   gap: 3.1875rem;
   padding: 4.5rem 6rem;
+}
+@media screen and (max-width: 1024px) {
+  .faq {
+    padding: 5.5rem 2rem;
+  }
 }
 
 .faq__items {
@@ -947,6 +1017,11 @@ main {
   gap: 3.1875rem;
   padding: 4.5rem 6rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+}
+@media screen and (max-width: 1024px) {
+  .articles {
+    padding: 5.5rem 2rem;
+  }
 }
 
 .articles__cards {
@@ -1015,6 +1090,11 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 6rem;
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 5.5rem 2rem;
+  }
 }
 
 .footer__brand {
