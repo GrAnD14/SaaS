@@ -75,7 +75,7 @@ header {
 }
 @media screen and (max-width: 1024px) {
   header {
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 2rem;
   }
 }
 
@@ -206,6 +206,12 @@ main {
   letter-spacing: 0.0125rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__eyebrow {
+    margin: auto;
+  }
+}
+
 .hero__title {
   color: var(--color-text-primary, rgb(21, 21, 38));
   font-size: 4rem;
@@ -217,6 +223,12 @@ main {
   width: 100%;
   min-height: 15.75rem;
 }
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .hero__highlight {
   color: var(--color-brand-text, rgb(108, 92, 231));
@@ -225,6 +237,12 @@ main {
   line-height: 4.25rem;
   letter-spacing: -0.0938rem;
   text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__description {
+    margin: auto;
+  }
 }
 
 .description {
@@ -250,6 +268,11 @@ main {
   min-width: 0;
   width: 100%;
   min-height: 6.25rem;
+}
+@media screen and (max-width: 1024px) {
+  .hero__buttons-group {
+    margin: auto;
+  }
 }
 
 .btn--primary.hero__btn {
@@ -293,6 +316,12 @@ main {
   letter-spacing: 0rem;
   text-align: left;
 }
+@media screen and (max-width: 1024px) {
+  .hero__trust-note {
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .visual {
   width: 100%;
@@ -304,6 +333,12 @@ main {
   align-items: flex-start;
   background: rgb(255, 255, 255);
   padding: 0 2.625rem 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .visual {
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .visual__dashboard {
@@ -319,6 +354,11 @@ main {
   /* Flowly / Shadow Large */
   box-shadow: 0px 1.125rem 2.5rem -0.5rem rgba(20, 18, 41, 0.12);
   background: var(--color-bg-page, rgb(255, 255, 255));
+}
+@media screen and (max-width: 1024px) {
+  .visual__dashboard {
+    margin: auto;
+  }
 }
 
 .visual__body {
