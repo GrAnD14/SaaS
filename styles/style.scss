@@ -125,6 +125,9 @@ header {
   width: 100%;
   max-width: 19.625rem;
   min-height: 1.25rem;
+  @include media("max-width: 768px") {
+    display: none;
+  }
 }
 
 .nav__link {
@@ -170,6 +173,29 @@ header {
   color: var(--color-on-brand, rgb(255, 255, 255));
 }
 
+.nav__buttons > .btn--secondary {
+  @include media("max-width: 768px") {
+    display: none;
+  }
+}
+
+.nav__menu-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 1.3125rem;
+  height: 1.75rem;
+  flex-direction: column;
+  padding: 0.5rem 0.125rem;
+}
+
+.nav__menu-burger-line {
+  background: black;
+  width: 100%;
+  height: 0.125rem;
+}
+
 main {
   align-items: center;
 }
@@ -185,6 +211,15 @@ main {
   @include media("max-width: 1024px") {
     flex-wrap: wrap;
     padding: 4.5rem 2rem;
+  }
+
+  @include media("max-width: 768px") {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.375rem;
+    padding: 3.5rem 2rem;
   }
 }
 
@@ -236,11 +271,33 @@ main {
   line-height: 4.25rem;
   letter-spacing: -0.0938rem;
   text-align: left;
+  @include media("max-width: 768px") {
+    display: inline-block;
+    margin-top: 1.375rem;
+  }
 }
 
 .hero__description {
   @include media("max-width: 1024px") {
     margin: auto;
+  }
+  @include media("max-width: 768px") {
+    margin: auto;
+    display: none;
+  }
+}
+
+.description.tablet-hero__description {
+  @include media("max-width: 1024px") {
+    display: none;
+  }
+  @include media("max-width: 768px") {
+    display: inline-block;
+    margin-top: 1.375rem;
+    margin: auto;
+    max-width: 30.75rem;
+    text-align: center;
+    
   }
 }
 
@@ -315,6 +372,9 @@ main {
   @include media("max-width: 1024px") {
     margin: auto;
     text-align: center;
+  }
+  @include media("max-width: 768px") {
+    display: none;
   }
 }
 
