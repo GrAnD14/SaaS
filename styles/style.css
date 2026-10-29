@@ -187,11 +187,21 @@ header {
   flex-direction: column;
   padding: 0.5rem 0.125rem;
 }
+@media screen and (max-width: 1024px) {
+  .nav__menu-burger {
+    display: none;
+  }
+}
 
 .nav__menu-burger-line {
   background: black;
   width: 100%;
   height: 0.125rem;
+}
+@media screen and (max-width: 1024px) {
+  .nav__menu-burger-line {
+    display: none;
+  }
 }
 
 main {
