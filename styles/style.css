@@ -639,8 +639,6 @@ main {
   min-width: 0;
   width: 100%;
   max-width: 83rem;
-  min-height: 13.75rem;
-  /* Автолейаут */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -650,10 +648,8 @@ main {
 }
 
 .features__icon {
-  min-width: 0;
-  width: 100%;
-  max-width: 2.875rem;
-  min-height: 2.875rem;
+  width: 2.875rem;
+  height: 2.875rem;
   padding: 0.8125rem 0.5625rem;
   display: flex;
   flex-direction: row;
@@ -674,7 +670,8 @@ main {
   min-width: 0;
   width: 100%;
   max-width: 20rem;
-  min-height: 18.75rem;
+  height: 100%;
+  min-height: 13.75rem;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
