@@ -194,6 +194,7 @@ header {
   height: 1.75rem;
   flex-direction: column;
   padding: 0.5rem 0.125rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .nav__menu-burger {
@@ -481,6 +482,11 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .visual__body {
+    max-width: 100%;
+  }
+}
 
 .visual__topbar {
   width: 100%;
@@ -494,6 +500,15 @@ main {
   gap: 0.75rem;
   padding: 0.875rem 1.125rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+}
+@media screen and (max-width: 768px) {
+  .visual__topbar {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.75rem 0.875rem;
+  }
 }
 
 .visual__text-logo {
@@ -509,6 +524,13 @@ main {
 @media screen and (max-width: 1475px) {
   .visual__text-logo {
     width: 9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .visual__text-logo {
+    display: inline-block;
+    width: 3.125rem;
+    height: 1.5rem;
   }
 }
 
@@ -538,7 +560,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .visual__search {
-    width: 38.5rem;
+    max-width: 38.5rem;
     height: 2.125rem;
   }
 }
@@ -592,8 +614,13 @@ main {
 }
 @media screen and (max-width: 768px) {
   .visual__board {
-    max-width: 38.7375rem;
+    max-width: 100%;
     gap: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.875rem;
   }
 }
 
@@ -643,8 +670,9 @@ main {
 }
 @media screen and (max-width: 768px) {
   .visual__columns {
-    max-width: 35.5794rem;
     background: #fff;
+    padding: 0;
+    max-width: 100%;
   }
 }
 
@@ -705,7 +733,6 @@ main {
 }
 @media screen and (max-width: 768px) {
   .visual__item {
-    max-width: 35.0794rem;
     height: 2.75rem;
     min-height: 0;
     flex-direction: row;
@@ -715,8 +742,13 @@ main {
     align-items: flex-start;
     gap: 0.5rem;
     padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+    max-width: 42.25rem;
     border-radius: 0.625rem;
+    cursor: pointer;
     background: var(--color-bg-subtle, rgb(248, 248, 252));
+  }
+  .visual__item:hover {
+    background: #e4e3e3;
   }
 }
 
