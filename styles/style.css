@@ -485,7 +485,7 @@ main {
 .visual__topbar {
   width: 100%;
   min-width: 0;
-  max-width: 38.125rem;
+  max-width: 100%;
   min-height: 4rem;
   display: flex;
   flex-direction: row;

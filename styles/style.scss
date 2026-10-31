@@ -456,7 +456,7 @@ main {
 .visual__topbar {
   width: 100%;
   min-width: 0;
-  max-width: 38.125rem;
+  max-width: 100%;
   min-height: 4rem;
   display: flex;
   flex-direction: row;
@@ -465,6 +465,8 @@ main {
   gap: 0.75rem;
   padding: 0.875rem 1.125rem;
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+
+  
 }
 
 .visual__text-logo {
