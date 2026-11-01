@@ -151,6 +151,7 @@ header {
   gap: 0.75rem;
 }
 
+
 .btn {
   display: flex;
   flex-direction: row;
@@ -165,6 +166,16 @@ header {
   cursor: pointer;
 }
 
+.btn--secondary {
+  box-sizing: border-box;
+  border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
+  background: var(--color-bg-page, rgb(255, 255, 255));
+  color: var(--color-text-primary, rgb(21, 21, 38));
+}
+
+
+
+
 .footer__column {
   display: flex;
   flex-direction: column;
@@ -174,12 +185,7 @@ header {
   }
 }
 
-.btn--secondary {
-  box-sizing: border-box;
-  border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
-  background: var(--color-bg-page, rgb(255, 255, 255));
-  color: var(--color-text-primary, rgb(21, 21, 38));
-}
+
 
 .btn--primary {
   gap: 0.5rem;
