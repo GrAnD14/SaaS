@@ -938,7 +938,6 @@ main {
 @media screen and (max-width: 768px) {
   .how-it-works__step {
     width: 100%;
-    max-height: 9.125rem;
   }
 }
 
@@ -1377,7 +1376,6 @@ main {
   .cta {
     gap: 1rem;
     padding: 2.375rem 1.875rem;
-    max-height: 20.5rem;
     min-height: 16rem;
   }
 }
