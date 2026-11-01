@@ -165,6 +165,15 @@ header {
   cursor: pointer;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  @include media("max-width: 768px") {
+    display: none;
+  }
+}
+
 .btn--secondary {
   box-sizing: border-box;
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
@@ -1043,7 +1052,6 @@ main {
     max-height: 4.75rem;
     background: #fff;
     padding: 0.75rem 1rem;
-
   }
 }
 
