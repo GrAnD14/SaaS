@@ -911,6 +911,13 @@ main {
   gap: 1.5rem;
   background: rgb(255, 255, 255);
 }
+@media screen and (max-width: 768px) {
+  .how-it-works__steps {
+    max-width: 44rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
 
 .how-it-works__step {
   display: flex;
@@ -921,6 +928,12 @@ main {
   padding: 1.5rem;
   border-radius: 1.25rem;
   background: var(--color-bg-page, rgb(255, 255, 255));
+}
+@media screen and (max-width: 768px) {
+  .how-it-works__step {
+    width: 100%;
+    max-height: 9.125rem;
+  }
 }
 
 .how-it-works__num {

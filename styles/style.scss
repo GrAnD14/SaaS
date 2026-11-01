@@ -848,6 +848,11 @@ main {
   align-items: flex-start;
   gap: 1.5rem;
   background: rgb(255, 255, 255);
+  @include media("max-width: 768px") {
+    max-width: 44rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
 }
 
 .how-it-works__step {
@@ -859,6 +864,11 @@ main {
   padding: 1.5rem;
   border-radius: 1.25rem;
   background: var(--color-bg-page, rgb(255, 255, 255));
+
+  @include media("max-width: 768px") {
+    width: 100%;
+    max-height: 9.125rem;
+  }
 }
 
 .how-it-works__num {
