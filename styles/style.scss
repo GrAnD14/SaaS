@@ -817,8 +817,18 @@ main {
   box-shadow: 0px 0.375rem 1.125rem 0rem rgba(20, 18, 41, 0.08);
   background: var(--color-bg-page, rgb(255, 255, 255));
   @include media("max-width: 768px") {
-    max-width: 21rem;
-    max-height: 13.75rem;
+    max-width: 100%;
+
+    /* 2. Половина от gap (1rem / 2 = 0.5rem). 
+          Это позволит карточкам встать ровно по 2 в ряд на планшетах. 
+          Если им не хватит места, они перенесутся и займут 100% */
+    flex: 1 1 calc(50% - 0.5rem);
+
+    /* 3. Убираем жесткий лимит высоты, чтобы не ломался контент */
+    max-height: none;
+    min-height: 13.75rem;
+    min-width: 22rem;
+    min-width: 12rem;
   }
 }
 
@@ -872,7 +882,6 @@ main {
 
   @include media("max-width: 768px") {
     width: 100%;
-    
   }
 }
 
