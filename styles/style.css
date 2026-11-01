@@ -897,6 +897,12 @@ main {
     padding: 4.5rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .how-it-works {
+    gap: 1.25rem;
+    padding: 4rem 2rem;
+  }
+}
 
 .how-it-works__steps {
   width: 100%;
@@ -984,6 +990,17 @@ main {
     padding: 4.5rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .app-preview {
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
+
+.tablet-eybrow {
+  display: none;
+}
 
 .app-preview__app-screenshot {
   width: 100%;
@@ -995,6 +1012,11 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .app-preview__app-screenshot {
+    max-width: 100%;
+  }
 }
 
 .app-preview__copy {
@@ -1046,6 +1068,12 @@ main {
     padding: 1.75rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .stats {
+    gap: 0.75rem;
+    padding: 1.5rem 2rem;
+  }
+}
 
 .stats__cards {
   gap: 1.25rem;
@@ -1053,6 +1081,15 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .stats__cards {
+    max-width: 44rem;
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
 }
 
 .stats__card {
@@ -1066,6 +1103,14 @@ main {
   align-items: center;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  .stats__card {
+    max-width: 21.625rem;
+    max-height: 4.75rem;
+    background: #fff;
+    padding: 0.75rem 1rem;
+  }
 }
 
 .stats__value {

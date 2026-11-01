@@ -834,6 +834,11 @@ main {
   @include media("max-width: 1475px") {
     padding: 4.5rem 2rem;
   }
+
+  @include media("max-width: 768px") {
+    gap: 1.25rem;
+    padding: 4rem 2rem;
+  }
 }
 
 .how-it-works__steps {
@@ -917,6 +922,16 @@ main {
     flex-direction: column-reverse;
     padding: 4.5rem 2rem;
   }
+
+  @include media("max-width: 768px") {
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
+
+.tablet-eybrow {
+  display: none;
 }
 
 .app-preview__app-screenshot {
@@ -929,6 +944,9 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @include media("max-width: 768px") {
+    max-width: 100%;
+  }
 }
 
 .app-preview__copy {
@@ -977,6 +995,12 @@ main {
   @include media("max-width: 1475px") {
     padding: 1.75rem 2rem;
   }
+
+  @include media("max-width: 768px") {
+    gap: 0.75rem;
+    padding: 1.5rem 2rem;
+  
+  }
 }
 
 .stats__cards {
@@ -985,6 +1009,13 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  @include media("max-width: 768px") {
+    max-width: 44rem;
+    flex-wrap: wrap;
+    row-gap: .75rem;
+    column-gap: 0;
+
+  }
 }
 
 .stats__card {
@@ -998,6 +1029,13 @@ main {
   align-items: center;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
+  @include media("max-width: 768px") {
+    max-width: 21.625rem;
+    max-height: 4.75rem;
+    background: #fff;
+    padding: .75rem 1rem;
+    
+  }
 }
 
 .stats__value {
