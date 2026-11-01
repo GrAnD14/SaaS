@@ -1141,6 +1141,12 @@ main {
     padding: 5.5rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .pricing {
+    gap: 1.375rem;
+    padding: 4rem 2rem;
+  }
+}
 
 .pricing__cards {
   display: flex;
@@ -1148,6 +1154,12 @@ main {
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__cards {
+    flex-wrap: wrap;
+    max-width: 32.5rem;
+  }
 }
 
 .pricing__card {
@@ -1170,6 +1182,15 @@ main {
   .pricing__card {
     padding: 2.5rem;
     max-height: 37rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pricing__card {
+    max-width: 32.5rem;
+    max-height: 26.875rem;
+    width: 100%;
+    gap: 0.875rem;
+    padding: 1.5rem;
   }
 }
 
@@ -1201,6 +1222,19 @@ main {
   width: 100%;
   min-width: 0;
   max-width: 16.625rem;
+}
+@media screen and (max-width: 768px) {
+  .pricing__description {
+    max-width: 17.625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
 }
 
 .pricing__benefit {
