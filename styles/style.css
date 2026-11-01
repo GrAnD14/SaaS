@@ -1113,7 +1113,9 @@ main {
 }
 @media screen and (max-width: 768px) {
   .stats__card {
-    max-width: 21.625rem;
+    max-width: 100%;
+    flex: 1 1;
+    min-width: 21.25rem;
     max-height: 4.75rem;
     background: #fff;
     padding: 0.75rem 1rem;
