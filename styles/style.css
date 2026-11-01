@@ -1260,6 +1260,12 @@ main {
     padding: 5.5rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .testimonials {
+    gap: 1.25rem;
+    padding: 4rem 2rem;
+  }
+}
 
 .testimonials__cards {
   /* Testimonial cards */
@@ -1272,6 +1278,12 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .testimonials__cards {
+    max-width: 37.5rem;
+    flex-wrap: wrap;
+  }
 }
 
 .testimonials__card {
@@ -1293,6 +1305,12 @@ main {
 @media screen and (max-width: 1475px) {
   .testimonials__card {
     padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials__card {
+    max-width: 37.5rem;
+    max-height: 14.375rem;
   }
 }
 

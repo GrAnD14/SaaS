@@ -1168,6 +1168,10 @@ main {
   @include media("max-width: 1475px") {
     padding: 5.5rem 2rem;
   }
+  @include media("max-width: 768px") {
+    gap: 1.25rem;
+    padding: 4rem 2rem;
+  }
 }
 
 .testimonials__cards {
@@ -1181,6 +1185,10 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+  @include media("max-width: 768px") {
+    max-width: 37.5rem;
+    flex-wrap: wrap;
+  }
 }
 
 .testimonials__card {
@@ -1201,6 +1209,11 @@ main {
 
   @include media("max-width: 1475px") {
     padding: 1.5rem;
+  }
+
+  @include media("max-width: 768px") {
+    max-width: 37.5rem;
+    max-height: 14.375rem;
   }
 }
 
