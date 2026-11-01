@@ -1354,6 +1354,11 @@ main {
     padding: 5.5rem 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .cta-wrapper {
+    padding: 3.5rem 2rem;
+  }
+}
 
 .cta {
   width: 100%;
@@ -1368,9 +1373,22 @@ main {
   background: var(--color-brand, rgb(108, 92, 231));
   min-width: 0;
 }
+@media screen and (max-width: 768px) {
+  .cta {
+    gap: 1rem;
+    padding: 2.375rem 1.875rem;
+    max-height: 20.5rem;
+    min-height: 16rem;
+  }
+}
 
 .cta-wrapper__eyebrow {
   color: var(--color-on-brand, rgb(255, 255, 255));
+}
+@media screen and (max-width: 768px) {
+  .cta-wrapper__eyebrow {
+    display: none;
+  }
 }
 
 .cta-wrapper__title {
@@ -1381,6 +1399,11 @@ main {
 .cta-wrapper__description {
   color: var(--color-on-brand, rgb(255, 255, 255));
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cta-wrapper__description {
+    min-height: 2rem;
+  }
 }
 
 .faq {

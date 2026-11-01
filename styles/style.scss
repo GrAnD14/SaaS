@@ -1254,6 +1254,9 @@ main {
   @include media("max-width: 1475px") {
     padding: 5.5rem 2rem;
   }
+  @include media("max-width: 768px") {
+    padding: 3.5rem 2rem;
+  }
 }
 
 .cta {
@@ -1269,10 +1272,19 @@ main {
   background: var(--color-brand, rgb(108, 92, 231));
 
   min-width: 0;
+  @include media("max-width: 768px") {
+    gap: 1rem;
+    padding: 2.375rem 1.875rem;
+    max-height: 20.5rem;
+    min-height: 16rem;
+  }
 }
 
 .cta-wrapper__eyebrow {
   color: var(--color-on-brand, rgb(255, 255, 255));
+  @include media("max-width: 768px") {
+    display: none;
+  }
 }
 
 .cta-wrapper__title {
@@ -1283,6 +1295,10 @@ main {
 .cta-wrapper__description {
   color: var(--color-on-brand, rgb(255, 255, 255));
   text-align: center;
+  @include media("max-width: 768px") {
+    min-height: 2rem;
+  }
+  
 }
 
 .faq {
