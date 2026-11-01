@@ -172,6 +172,14 @@ header {
   color: var(--color-text-primary, rgb(21, 21, 38));
 }
 
+.btn--secondary:hover {
+  background: var(--color-bg-page, rgb(246, 247, 251));
+}
+
+.btn--primary:hover {
+  background-color: #7D6AE8;
+}
+
 .footer__column {
   display: flex;
   flex-direction: column;
