@@ -1311,7 +1311,7 @@ main {
     padding: 5.5rem 2rem;
   }
   @include media("max-width: 768px") {
-    gap: .875rem;
+    gap: 0.875rem;
     padding: 3.5rem 2rem;
   }
 }
@@ -1365,6 +1365,10 @@ main {
   @include media("max-width: 1475px") {
     padding: 5.5rem 2rem;
   }
+  @include media("max-width: 768px") {
+    gap: 1.25rem;
+    padding: 3.5rem 2rem;
+  }
 }
 
 .articles__cards {
@@ -1378,6 +1382,17 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+  @include media("max-width: 768px") {
+    flex-wrap: wrap;
+    
+    max-width: 32.5rem;
+  }
+}
+
+.articles__card:last-child {
+  @include media("max-width: 768px") {
+    display: none;
+  }
 }
 
 .articles__card {
@@ -1396,6 +1411,12 @@ main {
   border: 0.0625rem solid var(--color-border-default, rgb(231, 231, 239));
   border-radius: var(--radius-lg, 1.25rem);
   background: var(--color-bg-page, rgb(255, 255, 255));
+  @include media("max-width: 768px") {
+    gap: .75rem;
+    padding: 0px 0px 1rem 0px;
+    max-height: 17.5rem;
+    max-width: 100%;
+  }
 }
 
 .articles__link {
