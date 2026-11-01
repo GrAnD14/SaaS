@@ -143,6 +143,14 @@ header {
   line-height: 1.25rem;
 }
 
+.nav__link:hover {
+  color: var(--color-text-primary, rgb(21, 21, 38));
+}
+
+.visual__anchor:hover {
+  color: var(--color-text-primary, rgb(21, 21, 38));
+}
+
 .buttons-group {
   display: flex;
   flex-direction: row;
@@ -150,7 +158,6 @@ header {
   align-items: flex-start;
   gap: 0.75rem;
 }
-
 
 .btn {
   display: flex;
@@ -174,17 +181,12 @@ header {
 }
 
 .btn--secondary:hover {
-
   background: var(--color-bg-page, rgb(246, 247, 251));
-  
 }
 
 .btn--primary:hover {
-  background-color: #7D6AE8;
+  background-color: #7d6ae8;
 }
-
-
-
 
 .footer__column {
   display: flex;
@@ -194,8 +196,6 @@ header {
     display: none;
   }
 }
-
-
 
 .btn--primary {
   gap: 0.5rem;
@@ -1364,6 +1364,15 @@ main {
   padding: 1.125rem 1.25rem;
   border-radius: var(--radius-md, 0.75rem);
   background: var(--color-bg-subtle, rgb(248, 248, 252));
+  cursor: pointer;
+}
+
+.faq__items:hover {
+  background: var(--color-bg-subtle, rgb(249, 249, 249));
+}
+
+.footer__link:hover {
+  color: var(--color-text-primary, rgb(21, 21, 38));
 }
 
 .faq__item {
