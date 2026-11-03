@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+const tasks = ['Design', 'Development', 'Testing']
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <ul>
+    <li v-for="task in tasks" :key="task">
+      {{ task }} 
+    </li>
+  </ul>
 </template>
 
 <style scoped></style>

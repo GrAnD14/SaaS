@@ -833,6 +833,7 @@
     border-radius: 0.625rem;
     background: var(--color-bg-page, rgb(255, 255, 255));
     word-break: break-word;
+    cursor: pointer;
   }
   @media screen and (max-width: 768px) {
     .visual__item {
@@ -1690,3 +1691,9 @@
     text-align: left;
   }
 }
+
+.tablet-visual__item:hover {
+    background: #f6f7fb;
+}
+
+
